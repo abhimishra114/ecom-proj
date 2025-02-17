@@ -1,3 +1,5 @@
+package com.example.ecom_proj;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -17,7 +19,7 @@ public class LoginTest {
 
     @Test
     public void testTitle() {
-        driver.get("http://localhost:8080/api/products");
+        driver.get("http://localhost:5000/api/products");
         String title = driver.getTitle();
         Assert.assertEquals(title, "Expected Title");
     }
